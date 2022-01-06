@@ -3,7 +3,7 @@ var playerHealth = 100;
 var playerAttack = 10;
 var playerMoney = 10;
 
-var enemyNames = ['Roborto', 'Amy Android', 'Robo Trumble'];
+var enemyNames = ['Coco', 'Leo', 'Sage'];
 var enemyHealth = 50;
 var enemyAttack = 12;
 
@@ -36,7 +36,7 @@ var fight = function(enemyName) {
 
     // check enemy's health
     if (enemyHealth <= 0) {
-      window.alert(enemyName + ' has died!');
+      window.alert(enemyName + ' is napping!');
 
       // award player money for winning
       playerMoney = playerMoney + 20;
@@ -55,7 +55,7 @@ var fight = function(enemyName) {
 
     // check player's health
     if (playerHealth <= 0) {
-      window.alert(playerName + ' has died!');
+      window.alert(playerName + ' is napping!');
       // leave while() loop if player is dead
       break;
     } else {
@@ -100,7 +100,7 @@ var startGame = function() {
     }
     // if player is not alive, break out of the loop and let endGame function run
     else {
-      window.alert("You have lost your robot in battle! Game Over!");
+      window.alert("Bebe cats besat yo ass! Game Over!");
       break;
     }
   }
@@ -115,9 +115,9 @@ var endGame = function() {
 
   // if player is still alive, player wins!
   if (playerHealth > 0) {
-    window.alert("Great job, you've survived the game! You now have a score of " + playerMoney + '.');
+    window.alert("Great job, you beat bebe cats ass! You now have a score of " + playerMoney + '.');
   } else {
-    window.alert("You've lost your robot in battle!");
+    window.alert("bebe cats beat yo ass!");
   }
 
   // ask player if they'd like to play again
